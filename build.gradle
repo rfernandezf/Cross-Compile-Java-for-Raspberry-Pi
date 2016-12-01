@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version = '0.1'
+
+mainClassName = 'main.java.Main'
+
+run {
+standardInput = System.in
+}
+
+repositories {
+
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+
+}
