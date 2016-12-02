@@ -9,6 +9,8 @@ I use pscp (putty) to send the output.jar file to the Raspberry Pi.
 
 You can use the setup for whatever project you want :)
 
+Just clone the project and start to work!
+
 ## Requeriments
 
 First of all, you need to have gradle installed on your PC.
