@@ -6,16 +6,41 @@ targetCompatibility = '1.8'
 version = '0.1'
 
 mainClassName = 'main.java.Main'
+archivesBaseName = 'output'
+version = ''
+
+
 
 run {
 standardInput = System.in
 }
 
-repositories {
 
+
+jar{
+manifest {
+        attributes 'Main-Class': 'main.java.Main'
+    }
 }
 
-// In this section you declare the dependencies for your production and test code
-dependencies {
+repositories {
+   flatDir {
+       dirs 'libs'
+   }
+}
 
+task sendPi(type:Exec){
+    workingDir '\\'
+	commandLine 'shellscripts\\sendPi.bat'
+}
+
+task makePi{
+
+}
+makePi.dependsOn 'build'
+makePi.dependsOn 'sendPi'
+	
+task cleanPi(type:Exec){
+    workingDir '\\'
+	commandLine 'shellscripts\\cleanPi.bat'
 }
