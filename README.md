@@ -29,7 +29,7 @@ You can edit the user, password, ip, and other things editing the scripts on the
 
 ## Usage
 
-The build.gradle file have pre-configurated some tasks.
+The build.gradle file have some tasks pre-configurated.
 
 To build the project, type:
 
@@ -45,7 +45,7 @@ For send your file to the Raspberry, type:
 gradle -q sendPi
 ```
 
-You can adjust all the parameters like user, password, output directory, and the Raspberry IP on the "build.gradle" file.
+You can adjust all the parameters like user, password, output directory, and the Raspberry IP on the scripts in the "shellscripts" folder.
 
 If you want to do these two steps at the same time, just type:
 
